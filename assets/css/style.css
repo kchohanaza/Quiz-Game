@@ -16,3 +16,8 @@
 body{
     background-color: rgb(158, 205, 240);
 }
+
+h2, h3 {
+    font-family: Poppins, sans-serif;
+    
+}

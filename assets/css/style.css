@@ -34,8 +34,17 @@ label {
     border-color: #FFD700;
     font-family: Poppins, sans-serif;
     font-weight: 600;
-    font-size: 1rem;
     color: #C50D66;
+    line-height: 30px;
+    border-radius: 10px;
+}
+
+.red-btn {
+    background-color: #C50D66;
+    border-color: #C50D66;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    color: #FFD700;
     line-height: 30px;
     border-radius: 10px;
 }
@@ -89,3 +98,41 @@ label {
     background-color: #ffffff;
 }
 
+form-check {
+    margin: 1rem 0 1rem 0;
+
+}
+
+label {
+    color: #7A7778;
+    
+
+}
+
+
+
+#check-answer-btn {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
+  }
+
+  #score-text {
+    font-size: 1.25rem;
+    font-weight: bold;
+
+  }
+
+  #score {
+    font-size: 1.25rem;
+    font-weight: normal;
+  }
+
+#next-question-btn {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 150px;
+    
+  }
+  
+  

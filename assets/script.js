@@ -1,0 +1,1 @@
+console.log("Golden Quizz app welcomes you");

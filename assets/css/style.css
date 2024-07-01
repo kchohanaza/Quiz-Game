@@ -3,21 +3,89 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-/**********************************Font Styles*/ 
-
-
-.banner-text {
-    font-family: Poppins, sans-serif;
-    font-weight: 700;
-    color: #C50D66;
-    font-size: 50px;
-}
-
+/**********************************Body*/ 
 body{
-    background-color: rgb(158, 205, 240);
+    background-color: #F5F4E8;
 }
 
 h2, h3 {
     font-family: Poppins, sans-serif;
     
 }
+
+p {
+    font-family: Poppins, sans-serif;
+    
+}
+
+label {
+    font-family: Poppins, sans-serif;
+}
+
+#banner-section {
+    background-color: #FFD700;
+    height: 100vh;
+
+}
+
+/**********************************General buttons */
+.yellow-btn {
+    background-color: #FFD700;
+    border-color: #FFD700;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #C50D66;
+    line-height: 30px;
+    border-radius: 10px;
+}
+
+/**********************************Banner*/ 
+#banner-text {
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    color: #C50D66;
+    font-size: 3rem;
+    padding: 0.5rem;
+    padding-top: 11rem;
+}
+
+#intro-section {
+    background-color: #FFffff;
+    height: 100vh;
+
+}
+
+#intro-text {
+    font-family: Poppins, sans-serif;
+    color: #7A7778;
+    font-size: 1.2rem;
+    padding-top: 11rem;
+    
+}
+
+
+.start-quiz-btn {
+  font-size: 0.875rem;
+  
+
+
+}
+
+/**********************************Question section*/ 
+
+#question-section {
+    padding: 112px 15px 0px 15px;
+}
+
+#question, #question-number {
+    font-size: 1.5rem;
+    font-weight: bold; 
+    
+}
+
+#options {
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+

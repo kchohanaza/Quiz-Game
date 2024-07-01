@@ -14,14 +14,16 @@
 
 <body>
     <!--Banner Start-->
-    <div>
-        <div id="banner-section">
-            <h1 class="banner-text">The Golden Quiz</h1>
+    <div class="body-column">
+        <div class="row">
+        <div id="banner-section" class="col-7">
+            <h1 id="banner-text">The Golden Quiz</h1>
         </div>
-        <div id="intro-section">
-            <p class="intro-text">Fore! How Well Do You Know Golf?</p>
-            <button type="button" class="btn btn-primary btn-lg">Large button</button>
+        <div id="intro-section" class="col-5">
+            <p id="intro-text">Fore! How Well Do You Know Golf?</p>
+            <button type="button" class="btn btn-primary btn-lg start-quiz-btn yellow-btn">Start quiz</button>
         </div>
+    </div>
     </div>
     <!--Banner End-->
 
@@ -30,9 +32,9 @@
     <div id="question-section">   
         <div>
             <h2 id="question">Q<span id="question-number"> 1 </span></h1>
-            <p id="question-text">Question goes here </p>
+            <p id="question-text">What is the term for a score of three under par on a single hole?</p>
         </div>
-            <div id="answer-buttons2">
+            <div id="answer-buttons2 options" class="container-fluid">
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                     <label class="form-check-label" for="flexRadioDefault1">
@@ -58,7 +60,7 @@
                     </label>
                   </div>
             </div>
-            <button type="button" class="btn btn-primary btn-lg">Check Answer</button>
+            <button type="button" class="btn btn-primary btn-lg col-12 yellow-btn" id="check-answer-btn">Check Answer</button>
             <p>Score:<span>3</span></p>
             <button type="button" class="btn btn-primary btn-lg">Next</button>
 

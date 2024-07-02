@@ -48,5 +48,22 @@ const questions =[
         ]
        },
 
- ];
-
+ ];//question button
+ const questionElement = document.getElementById("question-text");
+ console.log(questionElement);
+ //answer buttons
+ const answerButtons = document.getElementById("answer-buttons");
+ console.log(answerButtons);
+ const nextButton = document.getElementById("next-question-btn");
+ let currentQuestionIndex = 0;
+ let score = 0;
+ 
+ //* function to start the quiz*/
+ function startQuiz(){
+     currentQuestionIndex = 0;
+     score= 0;
+     nextButton.innerHtml = "Next";
+     showQuestion();
+ }
+ 
+ 

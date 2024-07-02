@@ -57,8 +57,7 @@ label {
     font-family: Poppins, sans-serif;
     font-weight: 700;
     color: #C50D66;
-    font-size: 3rem;
-    padding: 0.5rem;
+    font-size: 2.8rem;
     padding-top: 11rem;
 }
 
@@ -71,7 +70,7 @@ label {
 #intro-text {
     font-family: Poppins, sans-serif;
     color: #7A7778;
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-top: 11rem;
     
 }
@@ -173,19 +172,15 @@ label {
 @media (min-width: 768px) {
 
 
-    #banner-section {
-        margin-left: 90px,
-    }
 
     #banner-text {
-        font-size: 100px;
-        padding: 11rem 3rem 0rem 3rem;
+        font-size: 5rem;
         
     }
     #intro-text {
 
-        font-size: 2.5rem;
-        /*padding: 11rem 3rem 0rem 3rem;*/
+        font-size: 1.5rem;
+        
         
     }
     .start-quiz-btn {
@@ -228,7 +223,7 @@ label {
     }
     
     #banner-text {
-        font-size: 12rem;
+        font-size: 9rem;
         padding: 8rem 10rem 0rem 10rem;
         
     }

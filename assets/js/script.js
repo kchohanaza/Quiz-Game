@@ -48,41 +48,65 @@ const questions =[
         ]
        },
 
- ];//question button
+ ];
+ //Connect elements from the DOM using their ids and class selector for start-button 
+ //question button
  const questionElement = document.getElementById("question-text");
  console.log(questionElement);
  //answer buttons
- const answerButtons = document.getElementById("answer-buttons");
- console.log(answerButtons);
- const nextButton = document.getElementById("check-answer-btn");
+ const answerContainer = document.getElementById("answer-select");
+ console.log(answerContainer);
+ const startButton = document.querySelector(".start-quiz-btn");
+ const nextButton = document.getElementById("next-question-btn");
+ const checkAnswerButton = document.getElementById("check-answer-btn");
+
+
+// Define state variables
  let currentQuestionIndex = 0;
  let score = 0;
+
+// Add event listener for start button to begin quiz
+startButton.addEventListener("click", startQuiz);
  
- //* function to start the quiz*/
+/**
+ * startQuiz function starts the Quiz by resetting the currentQuestionIndex and score, 
+ * hiding the landing page area and displaying the question area, 
+ * updating the button text, and calling showQuestion function.
+ */
  function startQuiz(){
      currentQuestionIndex = 0;
      score= 0;
-     nextButton.innerHtml = "Next";
-     showQuestion();
+     nextButton.innerText = "Next"; // Ensure the text of next button is set to "Next"
+     nextButton.style.display = "none"; // Ensure next button is hidden initially
+     checkAnswerButton.style.display = "block"; // Ensure check answer button is shown initially
+     // Hide the landing page area
+     document.getElementById("landing-page").style.display = 'none';
+     // Show the question section
+     document.getElementById("question-section").style.display = 'block';
+     showQuestion(); // Show the first question
  }
- //show questions from index file
- function showQuestion(){
+
+/**
+ * showQuestion function displays the current question and its answer options. 
+ * Dynamically creates radio buttons for each answer and adds them to the answer container. 
+ */
+    function showQuestion(){
     resetState(); //reset the previous question
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex +1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
-//check options of current questions if its correct or not
-    currentQuestion.answers.forEach(answer => {
-        const button = document.createElement("button");
-        button.innerHTML = answer.text;
-        button.classList.add("btn");
-        answerButtons.appendChild(button);
-        if(answer.correct){
-            button.dataset.correct = answer.correct;
-        }
-        //on click it will select answers
-        button.addEventListener("click", selectAnswer);
-    });
+// Create and Display Answer Options
+currentQuestion.answers.forEach((answer, index) => {
+    const answerDiv = document.createElement("div");
+    answerDiv.classList.add("form-check", "mb-2");
+    answerDiv.innerHTML = `
+        <input class="form-check-input custom-radio" type="radio" name="answer" id="answer${index}" value="${answer.correct}">
+        <label class="form-check-label" for="answer${index}">
+            ${answer.text}
+        </label>
+    `;
+    answerContainer.appendChild(answerDiv);
+});
 }
 ////////
     

@@ -98,6 +98,7 @@ function startQuiz() {
     // Show the elements that were initially hidden
     document.getElementById("question").style.display = 'block';
     document.getElementById("question-text").style.display = 'block';
+    document.getElementById("answer-select").style.display = 'block';
     document.getElementById("check-answer-btn").style.display = 'block';
     document.getElementById("score-text").style.display = 'block';
     document.getElementById("reveal").style.display = 'block';
@@ -222,6 +223,8 @@ function showScore() {
     document.getElementById("question").style.display = 'none'; // Hide the question number
     document.getElementById("check-answer-btn").style.display = 'none'; // Hide the "Check Answer" button
     document.getElementById("score-text").style.display = 'none'; // Hide the progress score
+    document.getElementById("answer-select").style.display = 'none';
+    
 }
 
 /**

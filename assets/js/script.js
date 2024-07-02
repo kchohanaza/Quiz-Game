@@ -60,6 +60,7 @@ const revealText = document.getElementById("reveal");
 const questionHeader = document.getElementById("question"); 
 const questionSection = document.getElementById("question-section");
 const landingPage = document.getElementById("landing-page");
+const scoreLine = document.getElementById("score-text");
 
 
 // Define state variables
@@ -217,7 +218,8 @@ function showScore() {
     // Hide unnecessary elements on the final screen
     questionHeader.style.display = 'none'; 
     checkAnswerButton.style.display = 'none'; 
-    scoreText.style.display = 'block'; 
+    scoreText.style.display = 'none'; 
+    scoreLine.style.display = 'none';
 }
 
 /**

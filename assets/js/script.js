@@ -61,7 +61,7 @@ const startButton = document.querySelector(".start-quiz-btn");
 //Next buttn & Check Answer button
 const nextButton = document.getElementById("next-question-btn");
 const checkAnswerButton = document.getElementById("check-answer-btn");
-const scoreText = document.getElementById("score"); // <-- Added this line to correctly reference the score element
+const scoreText = document.getElementById("score"); 
 
 
 

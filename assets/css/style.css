@@ -241,3 +241,16 @@ label {
       
       }
     }
+
+/***************** To display correct and incorrect answers */
+    .correct {
+        background-color: #d4edda; /* Light green background */
+        border-color: #c3e6cb; /* Light green border */
+        color: #155724; /* Dark green text */
+    }
+    
+    .incorrect {
+        background-color: #f8d7da; /* Light red background */
+        border-color: #f5c6cb; /* Light red border */
+        color: #721c24; /* Dark red text */
+    }

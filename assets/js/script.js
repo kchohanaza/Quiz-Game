@@ -61,6 +61,8 @@ const startButton = document.querySelector(".start-quiz-btn");
 //Next buttn & Check Answer button
 const nextButton = document.getElementById("next-question-btn");
 const checkAnswerButton = document.getElementById("check-answer-btn");
+const scoreText = document.getElementById("score"); // <-- Added this line to correctly reference the score element
+
 
 
 // Define state variables
@@ -99,6 +101,8 @@ function startQuiz() {
     document.getElementById("check-answer-btn").style.display = 'block';
     document.getElementById("score-text").style.display = 'block';
     document.getElementById("reveal").style.display = 'block';
+
+    scoreText.innerText = score; // Sets core display to 0
 
     // Calls showQuestion function to display the first question.
     showQuestion();
@@ -193,6 +197,9 @@ function selectAnswer() {
         }
         input.disabled = true;
     });
+
+    // Update score text
+    scoreText.innerText = score; // Display updated score
 
     checkAnswerButton.disabled = true; // Disable check answer button after an answer is selected
     nextButton.style.display = "block"; // Show next button after an answer is selected

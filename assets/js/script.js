@@ -56,16 +56,17 @@ const startButton = document.querySelector(".start-quiz-btn");
 const nextButton = document.getElementById("next-question-btn");
 const checkAnswerButton = document.getElementById("check-answer-btn");
 const scoreText = document.getElementById("score"); 
-const questionSection = document.getElementById("question-section");
 const revealText = document.getElementById("reveal"); 
-const questionHeader = document.getElementById("question"); /
+const questionHeader = document.getElementById("question"); 
+const questionSection = document.getElementById("question-section");
+const landingPage = document.getElementById("landing-page");
 
 
 // Define state variables
 let currentQuestionIndex = 0;
 let score = 0;
 
-// Add event listener for start button to begin quiz
+// Add event listener for start button to begin Quiz
 startButton.addEventListener("click", startQuiz);
 
 /**
@@ -86,19 +87,20 @@ function startQuiz() {
     checkAnswerButton.style.display = "block"; // Ensures the "Check Answer" button is visible.
 
     // Hide the landing page area
-    document.getElementById("landing-page").style.display = 'none';
+    landingPage.style.display = 'none';
 
     // Show the question section with quizz questions
-    document.getElementById("question-section").style.display = 'block';
+    questionSection.style.display = 'block';
 
     // Show the elements that were initially hidden
     questionHeader.style.display = 'block'; 
     questionElement.style.display = 'block'; 
     checkAnswerButton.style.display = 'block';
-    document.getElementById("score-text").style.display = 'block';
+    scoreText.style.display = 'block';
     revealText.style.display = 'block'
 
-    scoreText.innerText = score; // Sets core display to 0
+    // Sets core display to 0
+    scoreText.innerText = score; 
 
     // Calls showQuestion function to display the first question.
     showQuestion();
@@ -213,30 +215,21 @@ function showScore() {
     nextButton.style.display = "block";
 
     // Hide unnecessary elements on the final screen
-    questionHeader.style.display = 'none'; // Hide the question number
-    checkAnswerButton.style.display = 'none'; // Hide the "Check Answer" button
-    document.getElementById("score-text").style.display = 'none'; // Hide the progress score
+    questionHeader.style.display = 'none'; 
+    checkAnswerButton.style.display = 'none'; 
+    scoreText.style.display = 'block'; 
 }
 
 /**
-* This function handles the transition to the next
+* This function is responsible for moving to the next question if available (showQuestion function),
+* or showing the final score if the current question is the last one (showScore function).
 */ 
 function handleNextButton() {
     currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length) {
-        showQuestion();
-    } else {
-        showScore();
-
-    }
+    currentQuestionIndex >= questions.length? showScore() : showQuestion();
 }
 
-nextButton.addEventListener("click", () => {
-    if (currentQuestionIndex < questions.length) {
-        handleNextButton();
-    } else {
-        startQuiz();
-    }
-});
+// Add event listener to the nextButton to start handleNextButton function
+nextButton.addEventListener("click", () => handleNextButton());
 
 

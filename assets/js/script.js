@@ -52,9 +52,9 @@ const questions =[
  const questionElement = document.getElementById("question-text");
  console.log(questionElement);
  //answer buttons
- const answerButtons = document.getElementById("answer-buttons");
+ const answerButtons = document.getElementById("check-answer-btn");
  console.log(answerButtons);
- const nextButton = document.getElementById("check-answer-btn");
+ const nextButton = document.getElementById("next-question-btn");
  let currentQuestionIndex = 0;
  let score = 0;
  

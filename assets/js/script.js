@@ -214,9 +214,14 @@ checkAnswerButton.addEventListener("click", selectAnswer);
 */
 function showScore() {
     resetState();
-    questionElement.innerHTML = `You scored ${score} out of${questions.length}!`;
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
+
+    // Hide unnecessary elements on the final screen
+    document.getElementById("question").style.display = 'none'; // Hide the question number
+    document.getElementById("check-answer-btn").style.display = 'none'; // Hide the "Check Answer" button
+    document.getElementById("score-text").style.display = 'none'; // Hide the progress score
 }
 
 /**

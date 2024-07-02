@@ -65,5 +65,25 @@ const questions =[
      nextButton.innerHtml = "Next";
      showQuestion();
  }
- 
+ //show questions from index file
+ function showQuestion(){
+    resetState(); //reset the previous question
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex +1;
+    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+//check options of current questions if its correct or not
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("btn");
+        answerButtons.appendChild(button);
+        if(answer.correct){
+            button.dataset.correct = answer.correct;
+        }
+        //on click it will select answers
+        button.addEventListener("click", selectAnswer);
+    });
+}
+////////
+    
  

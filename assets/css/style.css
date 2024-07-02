@@ -171,10 +171,17 @@ label {
 
 @media (min-width: 768px) {
 
+    #intro-section {
+        padding: 0rem 3rem 0rem 3rem;
+    
+    }
 
+    #banner-section {
+        padding: 0rem 3rem 0rem 3rem;
+    }
 
     #banner-text {
-        font-size: 5rem;
+        font-size: 4.5rem;
         
     }
     #intro-text {
@@ -189,58 +196,97 @@ label {
       
       }
 
+     #question-center {
+            display: flex;
+            justify-content: center;
+          }
+     
+
 }
 
 /****************************************************** media query Target screens wider than 1024px*/
 @media (min-width: 1024px) {
-#banner-section {
-    margin-left: 120px,
-}
+    #intro-section {
+        padding: 0rem 5rem 0rem 5rem;
+    }
 
-#banner-text {
-    font-size: 8rem;
-    padding: 11rem 4rem 0rem 4rem;
-    
-}
-#intro-text {
+    #intro-text {
 
-    font-size: 3.5rem;
-    
-    
-    
-}
-.start-quiz-btn {
-    font-size: 2rem;
-    line-height: 60px;
-  
-  }
-}
+        font-size: 1.5rem;
+    }
+
+    #banner-section {
+        padding: 0rem 5rem 0rem 5rem;
+    }
+
+    #banner-text {
+        font-size: 5rem;
+        
+    }
+   
+        
+      
+    }
+
+
 
 /****************************************************** media query Target screens wider than 1920px*/
 @media (min-width: 1920px) {
-    #banner-section {
-        margin-left: 120px,
+    #intro-section {
+        padding: 0rem 8rem 0rem 8rem;
     }
-    
-    #banner-text {
-        font-size: 9rem;
-        padding: 8rem 10rem 0rem 10rem;
-        
-    }
+
     #intro-text {
-    
-        font-size: 3.5rem;
-        padding-top: 8rem;
-        
+
+        font-size: 3rem;
+    }
+
+    #banner-section {
+        padding: 0rem 8rem 0rem 14rem;
+    }
+
+    #banner-text {
+        font-size: 10rem;
         
     }
+    
+        
     .start-quiz-btn {
         font-size: 3rem;
         line-height: 60px;
       
+      }
+    }
+
+/****************************************************** media query Target screens wider than 3200px*/
+@media (min-width: 3200px) {
+    #intro-section {
+        padding: 0rem 12rem 0rem 12rem;
+    }
+
+    #intro-text {
+
+        font-size: 5rem;
+        padding-top: 20rem
+    }
+
+    #banner-section {
+        padding: 0rem 12rem 0rem 16rem;
+    }
+
+    #banner-text {
+        font-size: 18rem;
+        padding-top: 20rem
+    }
+    
+        
+    .start-quiz-btn {
+        font-size: 5rem;
+        line-height: 120px;
       
       }
     }
+
 
 /***************** To display correct and incorrect answers */
     .correct {

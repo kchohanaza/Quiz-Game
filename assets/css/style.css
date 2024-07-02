@@ -1,3 +1,248 @@
+/**********************************Google font*/ 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/**********************************Body*/ 
 body{
-    background-color: rgb(158, 205, 240);
+    background-color: #F5F4E8;
 }
+
+h2, h3 {
+    font-family: Poppins, sans-serif;
+    
+}
+
+p {
+    font-family: Poppins, sans-serif;
+    
+}
+
+label {
+    font-family: Poppins, sans-serif;
+}
+
+#banner-section {
+    background-color: #FFD700;
+    height: 100vh;
+    
+
+}
+
+/**********************************General buttons */
+.yellow-btn {
+    background-color: #FFD700;
+    border-color: #FFD700;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    color: #C50D66;
+    line-height: 30px;
+    border-radius: 10px;
+}
+
+.red-btn {
+    background-color: #C50D66;
+    border-color: #C50D66;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    color: #FFD700;
+    line-height: 30px;
+    border-radius: 10px;
+}
+
+
+
+/**********************************Banner*/ 
+#banner-text {
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    color: #C50D66;
+    font-size: 3rem;
+    padding: 0.5rem;
+    padding-top: 11rem;
+}
+
+#intro-section {
+    background-color: #FFffff;
+    height: 100vh;
+
+}
+
+#intro-text {
+    font-family: Poppins, sans-serif;
+    color: #7A7778;
+    font-size: 1.2rem;
+    padding-top: 11rem;
+    
+}
+
+
+.start-quiz-btn {
+  font-size: 0.875rem;
+  
+
+
+}
+
+/**********************************Question section*/ 
+
+#question-section {
+    padding: 112px 15px 0px 15px;
+}
+
+#question, #question-number {
+    font-size: 1.5rem;
+    font-weight: bold; 
+    
+}
+
+#options {
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+
+#options-spacing {
+    margin: 30px 0px;
+
+
+}
+
+/*label {
+    color: #7A7778;   
+}*/
+
+
+.custom-radio {
+    width: 1rem; 
+    height: 1rem; 
+    border-radius: 50%; 
+    appearance: none; /* Remove default styles */
+    background-color: #fff; /* Set initial background color (white) */
+    border: 1px solid #C50D66; /* Create a red border */
+    cursor: pointer; /* Indicate clickable element */
+    transition: background-color 0.2s ease-in-out; /* Smooth color transition on hover */
+  }
+  
+  .custom-radio:hover {
+    background-color: #C50D66; /* Red background on hover (can be adjusted) */
+  }
+  
+  .custom-radio:checked {
+    background-color: #C50D66; /* Red background on selection */
+    
+    
+  }
+
+
+
+#check-answer-btn {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
+  }
+
+  #score-text {
+    font-size: 1.25rem;
+    font-weight: bold;
+
+  }
+
+  #score {
+    font-size: 1.25rem;
+    font-weight: normal;
+    padding-left: 0.5rem;
+  }
+
+  #reveal {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1ADE5D;
+  }
+
+#next-question-btn {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 150px;
+    
+  }
+  
+
+  /****************************************************** media query Target screens wider than 768px*/
+
+@media (min-width: 768px) {
+
+
+    #banner-section {
+        margin-left: 90px,
+    }
+
+    #banner-text {
+        font-size: 100px;
+        padding: 11rem 3rem 0rem 3rem;
+        
+    }
+    #intro-text {
+
+        font-size: 2.5rem;
+        /*padding: 11rem 3rem 0rem 3rem;*/
+        
+    }
+    .start-quiz-btn {
+        font-size: 2rem;
+        line-height: 60px;
+      
+      }
+
+}
+
+/****************************************************** media query Target screens wider than 1024px*/
+@media (min-width: 1024px) {
+#banner-section {
+    margin-left: 120px,
+}
+
+#banner-text {
+    font-size: 8rem;
+    padding: 11rem 4rem 0rem 4rem;
+    
+}
+#intro-text {
+
+    font-size: 3.5rem;
+    
+    
+    
+}
+.start-quiz-btn {
+    font-size: 2rem;
+    line-height: 60px;
+  
+  }
+}
+
+/****************************************************** media query Target screens wider than 1920px*/
+@media (min-width: 1920px) {
+    #banner-section {
+        margin-left: 120px,
+    }
+    
+    #banner-text {
+        font-size: 12rem;
+        padding: 8rem 10rem 0rem 10rem;
+        
+    }
+    #intro-text {
+    
+        font-size: 3.5rem;
+        padding-top: 8rem;
+        
+        
+    }
+    .start-quiz-btn {
+        font-size: 3rem;
+        line-height: 60px;
+      
+      
+      }
+    }

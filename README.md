@@ -4,7 +4,7 @@ The Golden Quiz is a captivating interactive game that tests your golf knowledge
 
 [View the live project here] (https:/*)
 
-<img src="assets/images/image.png" alt="overview of all design-mockups" width="500">
+<img src="assets/images/image.png" alt="overview of all design-mockups" width="600">
 
 
 ## User Stories
@@ -27,10 +27,15 @@ The Golden Quiz is a captivating interactive game that tests your golf knowledge
 - As a user, I want the Quiz to be responsive and work well on all device platforms.
 - As a user, I want the Quiz to be accessible, with features like keyboard navigation and screen reader compatibility.
 
-## User experience (UX)
+## Kanban Board
+![Image](assets/images/*)
+
+
+## User Experience (UX)
+![Image](assets/images/*)
+
 The Quizz website features a responsive design that adapts seamlessly to various device sizes. It boasts a modern, eye-catching aesthetic with a vibrant color scheme.
 
-![Image](assets/images/*)
 
 ## Features and Design
 - The start page offers a warm welcome message, clearly stating the website's purpose.
@@ -64,8 +69,6 @@ We selected modern and bright colours to have a good contrast and be in style wi
 - [Figma:](https://www.figma.com/) Used to create wireframes during the design process.
 - [Bootstrap:](https://getbootstrap.com/) Used to create the responsive layout.
 
-## Testing 
-
 ### Validator Testing 
 
 - HTML
@@ -73,6 +76,9 @@ We selected modern and bright colours to have a good contrast and be in style wi
 
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
+
+## Testing 
+
 
 ### Unfixed Bugs
 
@@ -86,18 +92,28 @@ The live link can be found here - [!INCLUDE LINK!]
 
 ## Credits 
 
-- Google Fonts
-  - https://fonts.google.com/specimen/Limelight
+- Google Fonts were used for the project.
 
-- This video helped us to understand the logic for the JavaScript :
-[GreatStack - How To Make Quiz App Using JavaScript ](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1263s)
+- Colour pallete was created with SheCodesCodingTools
+  - [Colour pallete](https://palettes.shecodes.io/palettes/112)
+
+- This video helped us to inspire the logic for the JavaScript:
+  - [GreatStack - How To Make Quiz App Using JavaScript ](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1263s)
 
 - Chat GPT was utilized to generate questions for the Quizz and to address our coding queries.
+
+- The theme of the project was inspired in honor of our facilitator, Alexander, with special thanks for his help.
+
+- There projects helped us to understand the Quizz and the Readme files:
+
+  - [JS-Hackathon-Quizmasters](https://github.com/ifzalmalook/Hackathon2/)
+
+  - [Tipsy Trivia: The Code Inquiziters Pub Quiz](https://github.com/alphabetjim/JS-Hackathon-Quizmasters/)
+
 
 ## Future Features
 - Using API Fetch function to load questions 
 - Adding Time function so motivate users and make a Quizz more challenging
-
  
 
 ## The Golden Golf Quiz Developer Team

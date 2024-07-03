@@ -63,6 +63,7 @@ const landingPage = document.getElementById("landing-page");
 const scoreLine = document.getElementById("score-text");
 
 
+
 // Define state variables
 let currentQuestionIndex = 0;
 let score = 0;
@@ -97,7 +98,7 @@ function startQuiz() {
     questionHeader.style.display = 'block'; 
     questionElement.style.display = 'block'; 
     checkAnswerButton.style.display = 'block';
-    scoreText.style.display = 'block';
+    scoreText.style.display = 'inline';
     revealText.style.display = 'block'
 
     // Sets core display to 0
@@ -211,7 +212,7 @@ checkAnswerButton.addEventListener("click", selectAnswer);
 */
 function showScore() {
     resetState();
-    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    questionElement.innerHTML = `<b style="font-size: 3rem;">End of Quiz</b><br> You Scored ${score} out of ${questions.length}! Have another turn and see if you can beat your score`;
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
 
@@ -220,6 +221,7 @@ function showScore() {
     checkAnswerButton.style.display = 'none'; 
     scoreText.style.display = 'none'; 
     scoreLine.style.display = 'none';
+    answerContainer.style.display = 'none';
 }
 
 /**

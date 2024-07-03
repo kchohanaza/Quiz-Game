@@ -44,11 +44,27 @@ The Golden Quiz is a captivating interactive game that tests your golf knowledge
 
 ## Features and Design
 - The start page offers a warm welcome message, clearly stating the website's purpose.
+
+<img src="assets/images/feature-welcome-screen.png" alt="feature-welcome-screen" width="400">
+
+
 - The Golden Quiz features 10  questions stored in an array, with future expansion possible via API integration. 
 - Its simple, intuitive layout ensures easy navigation, presenting each question with four answer options.
 - Upon selecting an answer, users receive immediate feedback and real-time score updates.
+- A pop-up message appears if users try to press the Next button without selecting an answer.
+- Once users press the Check Answer button and see the correct answer, all buttons are blocked, making it impossible to change the selected answer.
+
+<img src="assets/images/feature-questions.png" alt="feature-questions" width="550">
+
+<img src="assets/images/feature-higlight-wrong-answer.png" alt="feature-highlight-wrong-answer" width="250">
+
+
 - When the game is completed, user can see 3 different messages depending on the final score.
 - A "Play Again" button at the end enhances user experience, encouraging replay. 
+
+<img src="assets/images/feature-end-3options.png" alt="end-of-game-3-options-message" width="500">
+
+
 - The responsive design ensures compatibility across all devices.
 
 ### Typography
@@ -63,10 +79,7 @@ We selected modern and bright colours to have a good contrast and be in style wi
 
 Lo fidelity initial wireframes:
 
-<img src="assets/images/initial-wireframe-1.jpg" alt="initial wireframe" width="500">
-
-<img src="assets/images/initial-wireframe-2.jpg" alt="initial wireframe" width="500">
-
+<img src="assets/images/initial-wireframes.png" alt="initial wireframe" width="500">
 
 
 Hi fidelity wireframes were created in Figma for mobile, table and desktop versions.
@@ -81,11 +94,7 @@ Hi fidelity wireframes were created in Figma for mobile, table and desktop versi
 
   - The mobile versions:
 
-<img src="assets/images/Mobile Landing page Figma.png" alt="wireframe mobile landing page" width="250">
-
-<img src="assets/images/Mobile questions.png" alt="wireframe mobile questions" width="250">
-
-<img src="assets/images/End quiz mobile figma.png" alt="wireframe mobile end of quizz" width="250">
+<img src="assets/images/wireframes-mobile.png" alt="wireframe mobile landing page" width="500">
 
 ### Languages Used
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)

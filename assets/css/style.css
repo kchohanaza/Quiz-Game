@@ -259,3 +259,21 @@ label {
     .hidden { 
         display: none; 
     }
+
+/***************** To display final message */
+    .final-message {
+        font-weight: bold;
+        font-size: 9rem;     
+    }
+    
+    .final-message.low-score {
+        color: red;
+    }
+    
+    .final-message.medium-score {
+        color: orange;
+    }
+    
+    .final-message.high-score {
+        color: green;
+    }

@@ -36,7 +36,7 @@ label {
     font-family: Poppins, sans-serif;
     font-weight: 600;
     color: #C50D66;
-    line-height: 30px;
+    line-height: 20px;
     border-radius: 10px;
 }
 
@@ -86,7 +86,7 @@ label {
 /**********************************Question section*/ 
 
 #question-section {
-    padding: 112px 15px 0px 15px;
+    padding: 56px 15px 0px 15px;
 }
 
 #question, #question-number {
@@ -174,7 +174,7 @@ label {
 
 #next-question-btn {
     font-size: 2rem;
-    margin-top: 2rem;
+    margin-top: 0rem;
     margin-bottom: 150px;
     
   }
@@ -213,7 +213,10 @@ label {
             display: flex;
             justify-content: center;
           }
-     
+ 
+    #question-section {
+            padding: 112px 15px 0px 15px;
+    }
 
 }
 

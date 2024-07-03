@@ -28,13 +28,17 @@ The Golden Quiz is a captivating interactive game that tests your golf knowledge
 - As a user, I want the Quiz to be accessible, with features like keyboard navigation and screen reader compatibility.
 
 ## Kanban Board
+<img src="assets/images/kanban_board.png" alt="overview of all design-mockups" width="400">
 ![Image](assets/images/*)
 
 
 ## User Experience (UX)
 ![Image](assets/images/*)
-
-The Quizz website features a responsive design that adapts seamlessly to various device sizes. It boasts a modern, eye-catching aesthetic with a vibrant color scheme.
+ 
+Simple navigation: A clear instruction to ensure a smooth user experience for all ages and skill levels.
+Responsive Design: Adapts to different devices, from smartphones to desktops, for accessibility and convenience to all users.
+Visually Appealing: Produce a modern, eye-catching aesthetic with a vibrant color scheme to keep users engaged throughout the quiz.
+Clear website and functional to not overwhelm the users.
 
 
 ## Features and Design
@@ -112,12 +116,13 @@ The live link can be found here - [!INCLUDE LINK!]
 
 
 ## Future Features
-- Using API Fetch function to load questions 
-- Adding Time function so motivate users and make a Quizz more challenging
+- Using API Fetch function to load questions. 
+- Adding Time function so motivate users and make a Quizz more challenging.
+- Adding celebration function on scoring full marks in Quizz.
  
 
 ## The Golden Golf Quiz Developer Team
 - Khadeeja - Kchohanaza@gmail.com
 - Oluwole Akani - oakani@gmail.com
-- Neeru_BC - neerurathour@gmail.com
+- Neeru - neerurathour@gmail.com
 - Lola - swetlanda@gmail.com

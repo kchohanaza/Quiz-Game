@@ -97,7 +97,7 @@ label {
 
 #answer-select {
     background-color: #ffffff;
-    padding: 0.5rem 2rem;
+    padding: 0.2rem 1rem 1rem 1rem;
     margin: 0rem 0rem 2rem 0rem;
     border-radius: 10px;
 }
@@ -169,7 +169,7 @@ label {
   #reveal {
     font-size: 1.25rem;
     font-weight: bold;
-    color: #1ADE5D;
+    /*color: #1ADE5D;*/
   }
 
 #next-question-btn {

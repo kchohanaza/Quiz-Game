@@ -254,3 +254,8 @@ label {
         border-color: #f5c6cb; /* Light red border */
         color: #721c24; /* Dark red text */
     }
+
+/***************** Hidden class for controlling visibility */
+    .hidden { 
+        display: none; 
+    }

@@ -325,7 +325,7 @@ label {
 /***************** To display final message */
     .final-message {
         font-weight: bold;
-        font-size: 1.2em; /
+        font-size: 3rem; /
         text-align: center; 
         display: block;
         margin: 20px 0;

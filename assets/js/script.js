@@ -271,14 +271,14 @@ function showScore() {
 
     if (score < 5) { 
         finalMessage = `You scored ${score} out of ${questions.length}.<br>
-        Perhaps you can have more luck next time!`;
+        Have another turn and see if you can beat your score!`;
     } else if (score < 10) { 
         finalMessage = `You scored ${score} out of ${questions.length}.<br> 
         You are very good at golf, congratulations on your score!`;
     } else { 
         finalMessage = `You scored ${score} out of ${questions.length}.<br>
         Your knowledge in golf is amazing, perhaps you need to practice more golf on the course instead!`;
-        }
+    }
     questionElement.innerHTML = `<span class="final-message">${finalMessage}</span>`;
 
     nextButton.innerHTML = "Play Again";

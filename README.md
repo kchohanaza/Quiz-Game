@@ -88,10 +88,10 @@ The below shows a mobile screen size and how it looks on there.
 - <img src="assets/images/Incorrectanswer-Mobile-responsive-frontpage.png" alt="colour pallete" width="250" height="250">
 
 The next image is of desktop responsive site.
-- <img src="assets/images/question&answer-desktop-frontpage.png" alt="colour pallete" width="400" height="400">
+- <img src="assets/images/question&answer-desktop-frontpage.png" alt="colour pallete" width="500" height="500">
 
 The last image shows the final score that a user will obtain once the Quiz has completed. This is shown on a Desktop Monitor
-- <img src="assets/images/final_score_desktop.png" alt="colour pallete" width="400" height="400">
+- <img src="assets/images/final_score_desktop.png" alt="colour pallete" width="500" height="500">
 
 ### Unfixed Bugs
 

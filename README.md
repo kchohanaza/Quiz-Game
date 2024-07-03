@@ -58,6 +58,9 @@ The Golden Quiz is a captivating interactive game that tests your golf knowledge
 
 <img src="assets/images/feature-higlight-wrong-answer.png" alt="feature-highlight-wrong-answer" width="250">
 
+- Once the user presses the Check Answer button, messages indicating 'Correct' or 'Incorrect' will be displayed in different colors. 
+
+<img src="assets/images/feature-correct-incorrect-message.png" alt="feature-correct-incorrect-messages" width="250">
 
 - When the game is completed, user can see 3 different messages depending on the final score.
 - A "Play Again" button at the end enhances user experience, encouraging replay. 

@@ -150,7 +150,7 @@ function startQuiz() {
     questionHeader.style.display = 'block'; 
     questionElement.style.display = 'block'; 
     checkAnswerButton.style.display = 'block';
-    scoreText.style.display = 'block';
+    scoreText.style.display = 'inline';
     revealText.style.display = 'block'
 
     // Sets core display to 0
@@ -289,6 +289,7 @@ function showScore() {
     checkAnswerButton.style.display = 'none'; 
     scoreText.style.display = 'none'; 
     scoreLine.style.display = 'none';
+    answerContainer.style.display = 'none';
 }
 
 /**

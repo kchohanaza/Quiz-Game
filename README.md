@@ -60,9 +60,23 @@ We selected modern and bright colours to have a good contrast and be in style wi
 <img src="assets/images/color-pallete.png" alt="colour pallete" width="400">
 
 ### Wireframes
+Hi fidelity wireframes were created in Figma for mobile, table and desktop versions.
+
+  - The desktop versions:
+
 <img src="assets/images/Desktop landing page figma.png" alt="wireframe desktop landing page" width="500">
 
 <img src="assets/images/Desktop questions Figma.png" alt="wireframe desktop questions" width="500">
+
+<img src="assets/images/End of Quiz Desktop.png" alt="wireframe desktop end of quizz" width="500">
+
+  - The mobile versions:
+
+<img src="assets/images/Mobile Landing page Figma.png" alt="wireframe mobile landing page" width="250">
+
+<img src="assets/images/Mobile questions.png" alt="wireframe mobile questions" width="250">
+
+<img src="assets/images/End quiz mobile figma.png" alt="wireframe mobile end of quizz" width="250">
 
 ### Languages Used
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -82,8 +96,18 @@ We selected modern and bright colours to have a good contrast and be in style wi
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
 
+<img src="assets/images/HTML validator.png" alt="HTML validation" width="650"> 
+
+
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
+
+<img src="assets/images/css Validation.png" alt="CSS validation" width="650">  
+
+
+- JS
+  - No errors were found when passing through the official [(JSHint) validator](https://jshint.com/)
+  There were some warnings related to 
 
 ## Testing 
 

@@ -90,6 +90,9 @@ The below shows a mobile screen size and how it looks on there.
 The next image is of desktop responsive site.
 - <img src="assets/images/question&answer-desktop-frontpage.png" alt="colour pallete" width="400" height="400">
 
+The last image shows the final score that a user will obtain once the Quiz has completed. This is shown on a Desktop Monitor
+- <img src="assets/images/final_score_desktop.png" alt="colour pallete" width="400" height="400">
+
 ### Unfixed Bugs
 
 

@@ -304,12 +304,7 @@ function handleNextButton() {
 }
 
 // Add event listener to the nextButton to start handleNextButton function
-nextButton.addEventListener("click", () => {
-    if (currentQuestionIndex < questions.length) {
-        handleNextButton();
-    } else {
-        startQuiz();
-    }
-});
+nextButton.addEventListener("click", () => currentQuestionIndex < questions.length ? handleNextButton() : startQuiz());
+
 
 

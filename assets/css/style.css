@@ -321,3 +321,12 @@ label {
     .hidden { 
         display: none; 
     }
+
+/***************** To display final message */
+    .final-message {
+        font-weight: bold;
+        font-size: 3rem; /
+        text-align: center; 
+        display: block;
+        margin: 20px 0;
+    }

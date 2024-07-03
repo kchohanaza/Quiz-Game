@@ -1,4 +1,4 @@
-// Define array of questions and qnswers
+// Define array of questions and answers
 const questions = [
 
     {
@@ -48,7 +48,57 @@ const questions = [
         ]
     },
 
+    {
+        question: "What is the unusual rule that golfers must follow when playing in Sweden during the summer?",
+        answers: [
+            { text: "Only allowed to play at night", correct: false },
+            { text: "Can play 24 hours a day due to the Midnight Sun", correct: true },
+            { text: "Must wear brightly colored clothing", correct: false },
+            { text: "No golf carts allowed", correct: false },
+        ]
+    },
+
+    {
+        question: "Who holds the record for the most PGA Tour wins?",
+        answers: [
+            { text: "Tiger Woods", correct: false },
+            { text: "Jack Nicklaus", correct: false },
+            { text: "Sam Snead", correct: true },
+            { text: "Arnold Palmer", correct: false },
+        ]
+    },
+
+    {
+        question: "What is the name of the cup awarded to the winner of the Masters Tournament?",
+        answers:  [
+            { text: "Claret Jug", correct: false },
+            { text: "Wanamaker Trophy", correct: false },
+            { text: "Green Jacket", correct: true },
+            { text: "US Open Trophy", correct: false },
+        ]
+    },
+
+    {
+        question: "Which of the following is not a name of a golf club?",
+        answers: [
+            { text: "Driver", correct: false },
+            { text: "Putter", correct: false },
+            { text: "Wedge", correct: false },
+            { text: "Flyer", correct: true },
+        ]
+    },
+
+    {
+        question: "What is the longest recorded drive in a professional golf competition?",
+        answers: [
+            { text: "411 meters", correct: false },
+            { text: "430 meters", correct: false },
+            { text: "471 meters", correct: true },
+            { text: "457 meters", correct: false },
+        ]
+    },
 ];
+
 //Connect elements from the DOM using their ids and class selector for start-button 
 const questionElement = document.getElementById("question-text");
 const answerContainer = document.getElementById("answer-select");
@@ -61,8 +111,7 @@ const questionHeader = document.getElementById("question");
 const questionSection = document.getElementById("question-section");
 const landingPage = document.getElementById("landing-page");
 const scoreLine = document.getElementById("score-text");
-
-
+let shuffledQuestions = [];
 
 // Define state variables
 let currentQuestionIndex = 0;
@@ -80,6 +129,9 @@ function startQuiz() {
 
     currentQuestionIndex = 0;
     score = 0;
+
+    // Shuffle questions before starting the quiz using sort
+    shuffledQuestions = questions.sort(() => Math.random() - 0.5);
 
     // Prepare the "Next" button 
     nextButton.innerText = "Next"; // Ensure the text of next button is set to "Next"
@@ -117,8 +169,8 @@ function showQuestion() {
     // Reset the previous question by calling resetState function
     resetState();
 
-    // Get current question from "questions" array, then updates the question element with the current question number and text.
-    const currentQuestion = questions[currentQuestionIndex];
+    // Get current question from "shuffledQuestions" array, then update the question element with the current question number and text.
+    const currentQuestion = shuffledQuestions[currentQuestionIndex]; 
     const questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = `${questionNo}. ${currentQuestion.question}`;
 
@@ -212,7 +264,23 @@ checkAnswerButton.addEventListener("click", selectAnswer);
 */
 function showScore() {
     resetState();
-    questionElement.innerHTML = `<b style="font-size: 3rem;">End of Quiz</b><br> You Scored ${score} out of ${questions.length}! Have another turn and see if you can beat your score`;
+
+    // Added variable to hold the final message, which is different depending on the final score
+    let finalMessage = ""; 
+    let messageClass = "final-message"; 
+
+    if (score < 5) { 
+        finalMessage = `You scored ${score} out of ${questions.length}.<br>
+        Have another turn and see if you can beat your score!`;
+    } else if (score < 10) { 
+        finalMessage = `You scored ${score} out of ${questions.length}.<br> 
+        You are very good at golf, congratulations on your score!`;
+    } else { 
+        finalMessage = `You scored ${score} out of ${questions.length}.<br>
+        Your knowledge in golf is amazing, perhaps you need to practice more golf on the course instead!`;
+    }
+    questionElement.innerHTML = `<span class="final-message">${finalMessage}</span>`;
+
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";
 

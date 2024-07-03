@@ -88,7 +88,7 @@ The below shows a mobile screen size and how it looks on there.
 - <img src="assets/images/Incorrectanswer-Mobile-responsive-frontpage.png" alt="colour pallete" width="250" height="250">
 
 The next image is of desktop responsive site.
-- <img src="assets/images/question&answer-desktop-frontpage.png" alt="colour pallete" width="250" height="250">
+- <img src="assets/images/question&answer-desktop-frontpage.png" alt="colour pallete" width="400" height="400">
 
 ### Unfixed Bugs
 

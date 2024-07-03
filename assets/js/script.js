@@ -50,26 +50,24 @@ const questions = [
 
 ];
 //Connect elements from the DOM using their ids and class selector for start-button 
-//Question button
 const questionElement = document.getElementById("question-text");
-console.log(questionElement);
-//Answer buttons
 const answerContainer = document.getElementById("answer-select");
-console.log(answerContainer);
-// Start button
 const startButton = document.querySelector(".start-quiz-btn");
-//Next buttn & Check Answer button
 const nextButton = document.getElementById("next-question-btn");
 const checkAnswerButton = document.getElementById("check-answer-btn");
 const scoreText = document.getElementById("score"); 
-
+const revealText = document.getElementById("reveal"); 
+const questionHeader = document.getElementById("question"); 
+const questionSection = document.getElementById("question-section");
+const landingPage = document.getElementById("landing-page");
+const scoreLine = document.getElementById("score-text");
 
 
 // Define state variables
 let currentQuestionIndex = 0;
 let score = 0;
 
-// Add event listener for start button to begin quiz
+// Add event listener for start button to begin Quiz
 startButton.addEventListener("click", startQuiz);
 
 /**
@@ -90,20 +88,20 @@ function startQuiz() {
     checkAnswerButton.style.display = "block"; // Ensures the "Check Answer" button is visible.
 
     // Hide the landing page area
-    document.getElementById("landing-page").style.display = 'none';
+    landingPage.style.display = 'none';
 
     // Show the question section with quizz questions
-    document.getElementById("question-section").style.display = 'block';
+    questionSection.style.display = 'block';
 
     // Show the elements that were initially hidden
-    document.getElementById("question").style.display = 'block';
-    document.getElementById("question-text").style.display = 'block';
-    document.getElementById("answer-select").style.display = 'block';
-    document.getElementById("check-answer-btn").style.display = 'block';
-    document.getElementById("score-text").style.display = 'block';
-    document.getElementById("reveal").style.display = 'block';
+    questionHeader.style.display = 'block'; 
+    questionElement.style.display = 'block'; 
+    checkAnswerButton.style.display = 'block';
+    scoreText.style.display = 'block';
+    revealText.style.display = 'block'
 
-    scoreText.innerText = score; // Sets core display to 0
+    // Sets core display to 0
+    scoreText.innerText = score; 
 
     // Calls showQuestion function to display the first question.
     showQuestion();
@@ -119,9 +117,9 @@ function showQuestion() {
     resetState();
 
     // Get current question from "questions" array, then updates the question element with the current question number and text.
-    let currentQuestion = questions[currentQuestionIndex];
-    let questionNo = currentQuestionIndex + 1;
-    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+    const currentQuestion = questions[currentQuestionIndex];
+    const questionNo = currentQuestionIndex + 1;
+    questionElement.innerHTML = `${questionNo}. ${currentQuestion.question}`;
 
     // Create and display answer options
     // Iterates through each answer in the current question's "answers" array.
@@ -144,20 +142,19 @@ function showQuestion() {
 function resetState() {
 
     // Hide the next button initially
-
     nextButton.style.display = "none"; 
 
     // Show and enable check answer button 
     checkAnswerButton.style.display = "block"; 
     checkAnswerButton.disabled = false; 
 
-    // Clear Previous Answer Options
+    // Clear previous answer ptions
     while (answerContainer.firstChild) { 
         answerContainer.removeChild(answerContainer.firstChild); 
     }
 
     // Clear previous feedback
-    document.getElementById("reveal").innerText = ''; 
+    revealText.innerText = '';
 }
 
 /**
@@ -175,15 +172,14 @@ function selectAnswer() {
     }
 
     // Check if the selected answer is correct:
-
     const isCorrect = selectedAnswer.value === "true";
     if (isCorrect) {
         selectedAnswer.nextElementSibling.classList.add("correct");
         score++;
-        document.getElementById("reveal").innerText = "Correct!!!";
+        revealText.innerText = "Correct!!!"; 
     } else {
         selectedAnswer.nextElementSibling.classList.add("incorrect");
-        document.getElementById("reveal").innerText = "Incorrect!";
+        revealText.innerText = "Incorrect!";
     }
 
     // Show correct answer and disable all options
@@ -220,26 +216,22 @@ function showScore() {
     nextButton.style.display = "block";
 
     // Hide unnecessary elements on the final screen
-    document.getElementById("question").style.display = 'none'; // Hide the question number
-    document.getElementById("check-answer-btn").style.display = 'none'; // Hide the "Check Answer" button
-    document.getElementById("score-text").style.display = 'none'; // Hide the progress score
-    document.getElementById("answer-select").style.display = 'none';
-    
+    questionHeader.style.display = 'none'; 
+    checkAnswerButton.style.display = 'none'; 
+    scoreText.style.display = 'none'; 
+    scoreLine.style.display = 'none';
 }
 
 /**
-* This function handles the transition to the next
+* This function is responsible for moving to the next question if available (showQuestion function),
+* or showing the final score if the current question is the last one (showScore function).
 */ 
 function handleNextButton() {
     currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length) {
-        showQuestion();
-    } else {
-        showScore();
-
-    }
+    currentQuestionIndex >= questions.length? showScore() : showQuestion();
 }
 
+// Add event listener to the nextButton to start handleNextButton function
 nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < questions.length) {
         handleNextButton();

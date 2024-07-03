@@ -233,9 +233,14 @@ function selectAnswer() {
         selectedAnswer.nextElementSibling.classList.add("correct");
         score++;
         revealText.innerText = "Correct!!!"; 
+        revealText.classList.remove("incorrect-message");
+        revealText.classList.add("correct-message"); 
+
     } else {
         selectedAnswer.nextElementSibling.classList.add("incorrect");
         revealText.innerText = "Incorrect!";
+        revealText.classList.remove("correct-message"); 
+        revealText.classList.add("incorrect-message");
     }
 
     // Show correct answer and disable all options

@@ -130,15 +130,15 @@ function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
 
-    // Shuffle questions before starting the quiz using sort
+    // Shuffle questions before starting the Quiz using sort
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
 
     // Prepare the "Next" button 
-    nextButton.innerText = "Next"; // Ensure the text of next button is set to "Next"
-    nextButton.style.display = "none"; // Ensure next button is hidden initially
+    nextButton.innerText = "Next"; 
+    nextButton.style.display = "none";
 
     // Show the "Check Answer" button
-    checkAnswerButton.style.display = "block"; // Ensures the "Check Answer" button is visible.
+    checkAnswerButton.style.display = "block"; 
 
     // Hide the landing page area
     landingPage.style.display = 'none';
@@ -153,6 +153,7 @@ function startQuiz() {
     scoreText.style.display = 'inline';
     revealText.style.display = 'block'
     answerContainer.style.display = 'block';
+    scoreLine.style.display = 'block';
 
     // Sets core display to 0
     scoreText.innerText = score; 
@@ -209,6 +210,7 @@ function resetState() {
 
     // Clear previous feedback
     revealText.innerText = '';
+    answerContainer.style.display = 'block';
 }
 
 /**
@@ -268,8 +270,7 @@ function showScore() {
 
     // Added variable to hold the final message, which is different depending on the final score
     let finalMessage = ""; 
-    let messageClass = "final-message"; 
-
+    
     if (score < 5) { 
         finalMessage = `You scored ${score} out of ${questions.length}.<br>
         Have another turn and see if you can beat your score!`;
@@ -303,12 +304,7 @@ function handleNextButton() {
 }
 
 // Add event listener to the nextButton to start handleNextButton function
-nextButton.addEventListener("click", () => {
-    if (currentQuestionIndex < questions.length) {
-        handleNextButton();
-    } else {
-        startQuiz();
-    }
-});
+nextButton.addEventListener("click", () => currentQuestionIndex < questions.length ? handleNextButton() : startQuiz());
+
 
 

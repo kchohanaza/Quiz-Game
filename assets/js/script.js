@@ -272,17 +272,14 @@ function showScore() {
     if (score < 5) { 
         finalMessage = `You scored ${score} out of ${questions.length}.<br>
         Perhaps you can have more luck next time!`;
-        messageClass += " low-score";
     } else if (score < 10) { 
         finalMessage = `You scored ${score} out of ${questions.length}.<br> 
         You are very good at golf, congratulations on your score!`;
-        messageClass += " medium-score";
     } else { 
         finalMessage = `You scored ${score} out of ${questions.length}.<br>
         Your knowledge in golf is amazing, perhaps you need to practice more golf on the course instead!`;
-        messageClass += " high-score"; 
-    }
-    questionElement.innerHTML = finalMessage;
+        }
+    questionElement.innerHTML = `<span class="final-message">${finalMessage}</span>`;
 
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";

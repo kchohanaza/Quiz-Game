@@ -130,15 +130,15 @@ function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
 
-    // Shuffle questions before starting the quiz using sort
+    // Shuffle questions before starting the Quiz using sort
     shuffledQuestions = questions.sort(() => Math.random() - 0.5);
 
     // Prepare the "Next" button 
-    nextButton.innerText = "Next"; // Ensure the text of next button is set to "Next"
-    nextButton.style.display = "none"; // Ensure next button is hidden initially
+    nextButton.innerText = "Next"; 
+    nextButton.style.display = "none";
 
     // Show the "Check Answer" button
-    checkAnswerButton.style.display = "block"; // Ensures the "Check Answer" button is visible.
+    checkAnswerButton.style.display = "block"; 
 
     // Hide the landing page area
     landingPage.style.display = 'none';
@@ -153,6 +153,7 @@ function startQuiz() {
     scoreText.style.display = 'inline';
     revealText.style.display = 'block'
     answerContainer.style.display = 'block';
+    scoreLine.style.display = 'block';
 
     // Sets core display to 0
     scoreText.innerText = score; 
@@ -209,6 +210,7 @@ function resetState() {
 
     // Clear previous feedback
     revealText.innerText = '';
+    answerContainer.style.display = 'block';
 }
 
 /**

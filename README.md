@@ -84,7 +84,7 @@ We selected modern and bright colours to have a good contrast and be in style wi
 
 Screen size reflector used to ensure Desktop Monitors, Tablets and Mobile Phone screen sizes are accomodated.
 
-<img src="assets/images/Incorrectanswer-Mobile-responsive-frontpage.png" alt="colour pallete" width="200" height="100">
+<img src="assets/images/Incorrectanswer-Mobile-responsive-frontpage.png" alt="colour pallete" width="200" height="200">
 
 ### Unfixed Bugs
 

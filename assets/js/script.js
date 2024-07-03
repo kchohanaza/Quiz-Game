@@ -151,7 +151,7 @@ function startQuiz() {
     questionElement.style.display = 'block'; 
     checkAnswerButton.style.display = 'block';
     scoreText.style.display = 'inline';
-    revealText.style.display = 'block'
+    revealText.style.display = 'block';
     answerContainer.style.display = 'block';
     scoreLine.style.display = 'block';
 

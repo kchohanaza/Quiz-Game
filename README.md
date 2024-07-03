@@ -51,7 +51,7 @@ The Golden Quiz is a captivating interactive game that tests your golf knowledge
 ### Typography
 Google Fonts and Font Awesome were utilized to import the Poppins font and various icons into the HTML and styles.css files. These selections were made for their compatibility, simplicity, and user-friendly appearance. They ensure readability and a clear design across all tested screen sizes.
 
-### Color Cheme
+### Color Scheme
 We selected modern and bright colours to have a good contrast and be in style with our name - The Golden Golf Quiz.
 
 <img src="assets/images/color-pallete.png" alt="colour pallete" width="400">
@@ -82,6 +82,9 @@ We selected modern and bright colours to have a good contrast and be in style wi
 
 ## Testing 
 
+Screen size reflector used to ensure Desktop Monitors, Tablets and Mobile Phone screen sizes are accomodated.
+
+<img src="assets/images/Incorrectanswer-Mobile-responsive-frontpage.png" alt="colour pallete" width="400">
 
 ### Unfixed Bugs
 

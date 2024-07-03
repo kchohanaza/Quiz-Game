@@ -33,9 +33,8 @@ The Golden Quiz is a captivating interactive game that tests your golf knowledge
 <img src="assets/images/kanban_board.png" alt="kanban board of the project" width="300">
 
 
-
 ## User Experience (UX)
-![Image](assets/images/*)
+<img src="assets/images/Overview-all-formats.png" alt="overview landing page all screen versions" width="600">
  
 - Simple navigation: A clear instruction to ensure a smooth user experience for all ages and skill levels.
 - Responsive Design: Adapts to different devices, from smartphones to desktops, for accessibility and convenience to all users.
@@ -45,9 +44,10 @@ The Golden Quiz is a captivating interactive game that tests your golf knowledge
 
 ## Features and Design
 - The start page offers a warm welcome message, clearly stating the website's purpose.
-- The Golden Quiz features 5  questions stored in an array, with future expansion possible via API integration. 
+- The Golden Quiz features 10  questions stored in an array, with future expansion possible via API integration. 
 - Its simple, intuitive layout ensures easy navigation, presenting each question with four answer options.
 - Upon selecting an answer, users receive immediate feedback and real-time score updates.
+- When the game is completed, user can see 3 different messages depending on the final score.
 - A "Play Again" button at the end enhances user experience, encouraging replay. 
 - The responsive design ensures compatibility across all devices.
 
@@ -60,6 +60,15 @@ We selected modern and bright colours to have a good contrast and be in style wi
 <img src="assets/images/color-pallete.png" alt="colour pallete" width="400">
 
 ### Wireframes
+
+Lo fidelity initial wireframes:
+
+<img src="assets/images/initial-wireframe-1.jpg" alt="initial wireframe" width="500">
+
+<img src="assets/images/initial-wireframe-2.jpg" alt="initial wireframe" width="500">
+
+
+
 Hi fidelity wireframes were created in Figma for mobile, table and desktop versions.
 
   - The desktop versions:
@@ -107,7 +116,12 @@ Hi fidelity wireframes were created in Figma for mobile, table and desktop versi
 
 - JS
   - No errors were found when passing through the official [(JSHint) validator](https://jshint.com/)
-  There were some warnings related to 
+
+  - There are 33 known ES6-related warnings. However, no action is required for these warnings.
+
+  <img src="assets/images/JS-validation-1.png" alt="JS validation 1" width="650"> 
+
+  <img src="assets/images/JS-validation-2.png" alt="JS validation 2" width="650"> 
 
 ## Testing 
 
@@ -119,7 +133,7 @@ Hi fidelity wireframes were created in Figma for mobile, table and desktop versi
 
 - The site was deployed to GitHub pages. 
 
-The live link can be found here - [!INCLUDE LINK!]
+The live link can be found here - (https://kchohanaza.github.io/Quiz-Game/)
 
 
 ## Credits 
@@ -132,11 +146,11 @@ The live link can be found here - [!INCLUDE LINK!]
 - This video helped us to inspire the logic for the JavaScript:
   - [GreatStack - How To Make Quiz App Using JavaScript ](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1263s)
 
-- Chat GPT was utilized to generate questions for the Quizz and to address our coding queries.
+- Chat GPT was utilised to generate questions for the Quizz and to address our coding queries.
 
 - The theme of the project was inspired in honor of our facilitator, Alexander, with special thanks for his help.
 
-- There projects helped us to understand the Quizz and the Readme files:
+- There projects helped us to understand how Quizz works and also how to do the Readme file:
 
   - [JS-Hackathon-Quizmasters](https://github.com/ifzalmalook/Hackathon2/)
 
@@ -144,9 +158,11 @@ The live link can be found here - [!INCLUDE LINK!]
 
 
 ## Future Features
-- Using API Fetch function to load questions. 
-- Adding Time function so motivate users and make a Quizz more challenging.
-- Adding celebration function on scoring full marks in Quizz.
+- Usie API Fetch function to load questions. 
+- Add Time function so motivate users and make a Quizz more challenging.
+- Add celebration function on scoring full marks in Quizz.
+- Add personal accounts so users can save their scores and compare them with other players.
+- Create different categories related to golf, such as history and techniques.
  
 
 ## The Golden Golf Quiz Developer Team

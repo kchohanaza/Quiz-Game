@@ -270,8 +270,7 @@ function showScore() {
 
     // Added variable to hold the final message, which is different depending on the final score
     let finalMessage = ""; 
-    let messageClass = "final-message"; 
-
+    
     if (score < 5) { 
         finalMessage = `You scored ${score} out of ${questions.length}.<br>
         Have another turn and see if you can beat your score!`;

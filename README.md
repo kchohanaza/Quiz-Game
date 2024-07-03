@@ -2,7 +2,7 @@
 
 The Golden Quiz is a captivating interactive game that tests your golf knowledge with multiple-choice questions. Designed for golf enthusiasts and curious minds alike, it offers engaging brain puzzles and challenges for information recall. The sleek, minimalist design ensures accessibility for all users. With a score counter and clear answer options, the game provides a smooth and enjoyable experience.
 
-[View the live project here] (https:/*)
+[View the live project here](https://kchohanaza.github.io/Quiz-Game/)
 
 <img src="assets/images/image.png" alt="overview of all design-mockups" width="600">
 
@@ -28,7 +28,10 @@ The Golden Quiz is a captivating interactive game that tests your golf knowledge
 - As a user, I want the Quiz to be accessible, with features like keyboard navigation and screen reader compatibility.
 
 ## Kanban Board
-![Image](assets/images/kanban_board.png)
+<img src="assets/images/kanban-2png.png" alt="kanban board of the project" width="600">
+
+<img src="assets/images/kanban_board.png" alt="kanban board of the project" width="300">
+
 
 
 ## User Experience (UX)
@@ -57,7 +60,9 @@ We selected modern and bright colours to have a good contrast and be in style wi
 <img src="assets/images/color-pallete.png" alt="colour pallete" width="400">
 
 ### Wireframes
-<img src="assets/images/*" alt="*" width="*">
+<img src="assets/images/Desktop landing page figma.png" alt="wireframe desktop landing page" width="500">
+
+<img src="assets/images/Desktop questions Figma.png" alt="wireframe desktop questions" width="500">
 
 ### Languages Used
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)

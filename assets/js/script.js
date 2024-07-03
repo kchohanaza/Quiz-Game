@@ -152,6 +152,7 @@ function startQuiz() {
     checkAnswerButton.style.display = 'block';
     scoreText.style.display = 'inline';
     revealText.style.display = 'block'
+    answerContainer.style.display = 'block';
 
     // Sets core display to 0
     scoreText.innerText = score; 
@@ -279,7 +280,7 @@ function showScore() {
         finalMessage = `You scored ${score} out of ${questions.length}.<br>
         Your knowledge in golf is amazing, perhaps you need to practice more golf on the course instead!`;
     }
-    questionElement.innerHTML = `<span class="final-message">${finalMessage}</span>`;
+    questionElement.innerHTML = `<p class="final-message-heading">End of Quiz</P><span class="final-message">${finalMessage}</span>`;
 
     nextButton.innerHTML = "Play Again";
     nextButton.style.display = "block";

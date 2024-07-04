@@ -258,7 +258,7 @@ function selectAnswer() {
 
     // Update score text
     scoreText.innerText = score; // Display updated score
-
+    checkAnswerButton.style.display = "none"; // Hide check answer button after an answer is selected
     checkAnswerButton.disabled = true; // Disable check answer button after an answer is selected
     nextButton.style.display = "block"; // Show next button after an answer is selected
 }

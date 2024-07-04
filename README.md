@@ -2,7 +2,7 @@
 
 The Golden Quiz is a captivating interactive game that tests your golf knowledge with multiple-choice questions. Designed for golf enthusiasts and curious minds alike, it offers engaging brain puzzles and challenges for information recall. The sleek, minimalist design ensures accessibility for all users. With a score counter and clear answer options, the game provides a smooth and enjoyable experience.
 
-[View the live project here] (https:/*)
+[View the live project here](https://kchohanaza.github.io/Quiz-Game/)
 
 <img src="assets/images/image.png" alt="overview of all design-mockups" width="600">
 
@@ -28,11 +28,13 @@ The Golden Quiz is a captivating interactive game that tests your golf knowledge
 - As a user, I want the Quiz to be accessible, with features like keyboard navigation and screen reader compatibility.
 
 ## Kanban Board
-![Image](assets/images/kanban_board.png)
+<img src="assets/images/kanban-2png.png" alt="kanban board of the project" width="600">
+
+<img src="assets/images/kanban_board.png" alt="kanban board of the project" width="300">
 
 
 ## User Experience (UX)
-![Image](assets/images/*)
+<img src="assets/images/Overview-all-formats.png" alt="overview landing page all screen versions" width="600">
  
 - Simple navigation: A clear instruction to ensure a smooth user experience for all ages and skill levels.
 - Responsive Design: Adapts to different devices, from smartphones to desktops, for accessibility and convenience to all users.
@@ -42,22 +44,60 @@ The Golden Quiz is a captivating interactive game that tests your golf knowledge
 
 ## Features and Design
 - The start page offers a warm welcome message, clearly stating the website's purpose.
-- The Golden Quiz features 5  questions stored in an array, with future expansion possible via API integration. 
+
+<img src="assets/images/feature-welcome-screen.png" alt="feature-welcome-screen" width="400">
+
+
+- The Golden Quiz features 10  questions stored in an array, with future expansion possible via API integration. 
 - Its simple, intuitive layout ensures easy navigation, presenting each question with four answer options.
 - Upon selecting an answer, users receive immediate feedback and real-time score updates.
+- A pop-up message appears if users try to press the Next button without selecting an answer.
+- Once users press the Check Answer button and see the correct answer, all buttons are blocked, making it impossible to change the selected answer.
+
+<img src="assets/images/feature-questions.png" alt="feature-questions" width="550">
+
+<img src="assets/images/feature-higlight-wrong-answer.png" alt="feature-highlight-wrong-answer" width="250">
+
+- Once the user presses the Check Answer button, messages indicating 'Correct' or 'Incorrect' will be displayed in different colors. 
+
+<img src="assets/images/feature-correct-incorrect-message.png" alt="feature-correct-incorrect-messages" width="250">
+
+- When the game is completed, user can see 3 different messages depending on the final score.
 - A "Play Again" button at the end enhances user experience, encouraging replay. 
+
+<img src="assets/images/feature-end-3options.png" alt="end-of-game-3-options-message" width="500">
+
+
 - The responsive design ensures compatibility across all devices.
 
 ### Typography
 Google Fonts and Font Awesome were utilized to import the Poppins font and various icons into the HTML and styles.css files. These selections were made for their compatibility, simplicity, and user-friendly appearance. They ensure readability and a clear design across all tested screen sizes.
 
-### Color Cheme
+### Color Scheme
 We selected modern and bright colours to have a good contrast and be in style with our name - The Golden Golf Quiz.
 
 <img src="assets/images/color-pallete.png" alt="colour pallete" width="400">
 
 ### Wireframes
-<img src="assets/images/*" alt="*" width="*">
+
+Lo fidelity initial wireframes:
+
+<img src="assets/images/initial-wireframes.png" alt="initial wireframe" width="500">
+
+
+Hi fidelity wireframes were created in Figma for mobile, table and desktop versions.
+
+  - The desktop versions:
+
+<img src="assets/images/Desktop landing page figma.png" alt="wireframe desktop landing page" width="500">
+
+<img src="assets/images/Desktop questions Figma.png" alt="wireframe desktop questions" width="500">
+
+<img src="assets/images/End of Quiz Desktop.png" alt="wireframe desktop end of quizz" width="500">
+
+  - The mobile versions:
+
+<img src="assets/images/wireframes-mobile.png" alt="wireframe mobile landing page" width="500">
 
 ### Languages Used
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -77,8 +117,23 @@ We selected modern and bright colours to have a good contrast and be in style wi
 - HTML
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/)
 
+<img src="assets/images/HTML validator.png" alt="HTML validation" width="650"> 
+
+
 - CSS
   - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
+
+<img src="assets/images/css Validation.png" alt="CSS validation" width="650">  
+
+
+- JS
+  - No errors were found when passing through the official [(JSHint) validator](https://jshint.com/)
+
+  - There are 33 known ES6-related warnings. However, no action is required for these warnings.
+
+  <img src="assets/images/JS-validation-1.png" alt="JS validation 1" width="650"> 
+
+  <img src="assets/images/JS-validation-2.png" alt="JS validation 2" width="650"> 
 
 ## Testing 
 
@@ -90,7 +145,7 @@ We selected modern and bright colours to have a good contrast and be in style wi
 
 - The site was deployed to GitHub pages. 
 
-The live link can be found here - [!INCLUDE LINK!]
+The live link can be found here - (https://kchohanaza.github.io/Quiz-Game/)
 
 
 ## Credits 
@@ -103,11 +158,11 @@ The live link can be found here - [!INCLUDE LINK!]
 - This video helped us to inspire the logic for the JavaScript:
   - [GreatStack - How To Make Quiz App Using JavaScript ](https://www.youtube.com/watch?v=PBcqGxrr9g8&t=1263s)
 
-- Chat GPT was utilized to generate questions for the Quizz and to address our coding queries.
+- Chat GPT was utilised to generate questions for the Quizz and to address our coding queries.
 
 - The theme of the project was inspired in honor of our facilitator, Alexander, with special thanks for his help.
 
-- There projects helped us to understand the Quizz and the Readme files:
+- There projects helped us to understand how Quizz works and also how to do the Readme file:
 
   - [JS-Hackathon-Quizmasters](https://github.com/ifzalmalook/Hackathon2/)
 
@@ -115,9 +170,11 @@ The live link can be found here - [!INCLUDE LINK!]
 
 
 ## Future Features
-- Using API Fetch function to load questions. 
-- Adding Time function so motivate users and make a Quizz more challenging.
-- Adding celebration function on scoring full marks in Quizz.
+- Usie API Fetch function to load questions. 
+- Add Time function so motivate users and make a Quizz more challenging.
+- Add celebration function on scoring full marks in Quizz.
+- Add personal accounts so users can save their scores and compare them with other players.
+- Create different categories related to golf, such as history and techniques.
  
 
 ## The Golden Golf Quiz Developer Team

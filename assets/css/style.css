@@ -337,3 +337,10 @@ label {
         display: block;
     }
 
+    .correct-message {
+        color: green;
+    }
+    
+    .incorrect-message {
+        color: #C50D66;
+    }

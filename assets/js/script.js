@@ -114,20 +114,20 @@ const scoreLine = document.getElementById("score-text");
 let shuffledQuestions = [];
 
 // Define state variables
-let currentQuestionIndex = 0;
+let currentQuestionNumber = 0;
 let score = 0;
 
 // Add event listener for start button to begin Quiz
 startButton.addEventListener("click", startQuiz);
 
 /**
- * startQuiz function starts the Quiz by resetting the currentQuestionIndex and score, 
+ * startQuiz function starts the Quiz by resetting the currentQuestionNumber and score, 
  * hiding the landing page area and displaying the question area, 
  * updating the button text, and calling showQuestion function to display the firts question.
  */
 function startQuiz() {
 
-    currentQuestionIndex = 0;
+    currentQuestionNumber = 0;
     score = 0;
 
     // Shuffle questions before starting the Quiz using sort
@@ -151,7 +151,7 @@ function startQuiz() {
     questionElement.style.display = 'block'; 
     checkAnswerButton.style.display = 'block';
     scoreText.style.display = 'inline';
-    revealText.style.display = 'block'
+    revealText.style.display = 'block';
     answerContainer.style.display = 'block';
     scoreLine.style.display = 'block';
 
@@ -172,8 +172,8 @@ function showQuestion() {
     resetState();
 
     // Get current question from "shuffledQuestions" array, then update the question element with the current question number and text.
-    const currentQuestion = shuffledQuestions[currentQuestionIndex]; 
-    const questionNo = currentQuestionIndex + 1;
+    const currentQuestion = shuffledQuestions[currentQuestionNumber]; 
+    const questionNo = currentQuestionNumber + 1;
     questionElement.innerHTML = `${questionNo}. ${currentQuestion.question}`;
 
     // Create and display answer options
@@ -233,9 +233,14 @@ function selectAnswer() {
         selectedAnswer.nextElementSibling.classList.add("correct");
         score++;
         revealText.innerText = "Correct!!!"; 
+        revealText.classList.remove("incorrect-message");
+        revealText.classList.add("correct-message"); 
+
     } else {
         selectedAnswer.nextElementSibling.classList.add("incorrect");
         revealText.innerText = "Incorrect!";
+        revealText.classList.remove("correct-message"); 
+        revealText.classList.add("incorrect-message");
     }
 
     // Show correct answer and disable all options
@@ -299,12 +304,12 @@ function showScore() {
 * or showing the final score if the current question is the last one (showScore function).
 */ 
 function handleNextButton() {
-    currentQuestionIndex++;
-    currentQuestionIndex >= questions.length? showScore() : showQuestion();
+    currentQuestionNumber++;
+    currentQuestionNumber >= questions.length? showScore() : showQuestion();
 }
 
 // Add event listener to the nextButton to start handleNextButton function
-nextButton.addEventListener("click", () => currentQuestionIndex < questions.length ? handleNextButton() : startQuiz());
+nextButton.addEventListener("click", () => currentQuestionNumber < questions.length ? handleNextButton() : startQuiz());
 
 
 

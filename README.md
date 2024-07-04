@@ -150,7 +150,11 @@ The last image shows the final score that a user will obtain once the Quiz has c
 
 
 ### Unfixed Bugs
+- Not fully responsive in 3200x2000 resolution.
 
+### Future UX Considerations
+- Hiding the checkanswer button once answer is confirmed.
+- Not highlighting the radio button once answer is confirmed.
 
 ## Deployment
 
